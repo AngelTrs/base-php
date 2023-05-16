@@ -1,0 +1,13 @@
+---
+version: "3.9"
+
+services:
+  project-name:
+    container_name: project-name
+    image: angeltrs/project-name:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: base
+    ports:
+      - "8106:80"
